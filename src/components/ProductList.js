@@ -7,9 +7,9 @@ class ProductList extends Component {
 
     render(){
     return(
-        <div class="row">
-            <div class="col-md-5 mx-auto mt-4">
-                <table class="table table-dark">
+        <div className="row">
+            <div className="col-md-5 mx-auto mt-4">
+                <table className="table table-dark">
                     <thead>
                         <tr>
                             <th scope="col">Articulo</th>

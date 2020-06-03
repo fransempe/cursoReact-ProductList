@@ -1,29 +1,25 @@
 import React from 'react';
 import Navigation from './components/Navigation';
 import ProductList from './components/ProductList';
+import ProductListStock from './components/ProductListStock';
 
 function App() {
 
-  // const user ={
-  //   name: "Fran",
-  //   age: "33"
-  // }
-
   const articulos = [
     {
-      nombre: "Articulo 1",
+      nombre: "Coca-Cola 2 1/2",
       cantidad: 41,
-      precio: "$50,01"
+      precio: "$110,01"
     },
     {
-      nombre: "Articulo 2",
-      cantidad: 4,
-      precio: "$100,00"
+      nombre: "Cerveza Andes Rubia",
+      cantidad: 2,
+      precio: "$101,20"
     },
     {
-      nombre: "Articulo 3",
+      nombre: "Pepsi 1 1/2",
       cantidad: 0,
-      precio: "$110,00"
+      precio: "$90,50"
     }
   ]
 
@@ -31,7 +27,8 @@ function App() {
     <div className="App">
       <header className='App-header'>
         <Navigation />
-        <ProductList articulos = { articulos } />
+        <ProductList articulos = {articulos} />
+        <ProductListStock articulos = {articulos} />
       </header>
     </div>
   );
